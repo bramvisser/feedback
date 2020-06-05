@@ -7,16 +7,16 @@ abstract class FeedbackTranslation {
 
 class EnTranslation implements FeedbackTranslation {
   @override
-  String get submitButtonText => 'Submit';
+  String get submitButtonText => AppLocalizations.of(context).translate('Submit');
 
   @override
-  String get feedbackDescriptionText => 'What\'s wrong?';
+  String get feedbackDescriptionText => AppLocalizations.of(context).translate("What's wrong?");
 
   @override
-  String get draw => 'Draw';
+  String get draw => AppLocalizations.of(context).translate('Draw');
 
   @override
-  String get navigate => 'Navigate';
+  String get navigate => AppLocalizations.of(context).translate('Navigate');
 }
 
 class DeTranslation implements FeedbackTranslation {
